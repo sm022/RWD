@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+}
+
+.container{
+  background-color: silver;
+  border: 1px solid red;
+}
+
+.box1{
+  background-color: gold;
+}
+.box2{
+  background-color: pink;
+}
+.box3{
+  background-color: lightgreen;
+}
+.box4{
+  background-color: skyblue;
+}
+.box5{
+  background-color: salmon;
+}
+.box6{
+  background-color: violet;
+}
+.box7{
+  background-color: aquamarine;
+}
+.box8{
+  background-color: lightseagreen;
+}
+.box9{
+  background-color: mediumpurple;
+}
+.box10{
+  background-color: midnightblue;
+}
+.box11{
+  background-color: olive;
+}
+.box12{
+  background-color: sandybrown;
+}
