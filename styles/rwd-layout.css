@@ -1,12 +1,9 @@
-body{
-  margin: 0;
+*{
+  box-sizing: border-box;
 }
 
-.container{
-  background-color: silver;
-  border: 1px solid red;
-  display: flex;
-  flex-flow: row wrap;
+body{
+  margin: 0;
 }
 
 .group1{
@@ -47,15 +44,25 @@ body{
 }
 
 /* 모든 디바이스 */
+.container{
+  background-color: silver;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 12px 12px;
+}
+
 div[class*="group"]{
   width: 100%;
   height: 50px;
+  margin: 12px 0;
+  padding: 0 12px;
 }
 
 /* 768px 이상일 때 */
 @media (min-width:768px){
   div[class*="group"]{
-    width: 100%;
+    width: 50%;
     height: 100px;
   }
 }
