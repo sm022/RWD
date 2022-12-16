@@ -196,23 +196,29 @@ input[type="search"] {
   }
 
   /* 데스크탑 메인 메뉴 */
-  .menu{
-
+  .menu {
+    background: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
   }
 
-  .menu__list{
-
+  .menu__list {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
-
-  .menu__item{
-    
+  
+  .menu__link {
+    display: block;
+    padding: var(--spacing-md);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
-
-  .menu__link{
-    
-  }
-
- }
 
 /* 고해상도 배경이미지 미디어쿼리 */
 @media (-webkit-min-device-pixel-ratio: 2),
