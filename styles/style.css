@@ -99,6 +99,27 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 추천 서적 */
+.book{
+  background: lightgreen;
+}
+/* 공통 새소식 */
+.news{
+  background: yellow;
+}
+/* 공통 게시판 */
+.board{
+  background: lightsalmon;
+}
+/* 공통 인기 사이트 */
+.favorite{
+  background: skyblue;
+}
+/* 공통 트위터 */
+.twitter{
+  background: burlywood;
+}
+
 
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
@@ -208,7 +229,7 @@ input[type="search"] {
 
   /* 모바일 메인 콘텐츠 */
   .appMain{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 
@@ -273,6 +294,20 @@ input[type="search"] {
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 
+  /* 데스크탑 메인 콘텐츠 */
+  .appMain{
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      "news news news news news news news news news news news news"
+      "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+      "book book book book . board board board board board board board";
+  }
+}
+
+
 /* 고해상도 배경이미지 미디어쿼리 */
 @media (-webkit-min-device-pixel-ratio: 2),
   (min--moz-device-pixel-ratio: 2),
@@ -283,6 +318,4 @@ input[type="search"] {
   .logo__link {
     background-image: url(./../images/webcafe-logo@2x.png);
   }
-}
-
 }
