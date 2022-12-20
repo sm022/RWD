@@ -152,7 +152,6 @@ input[type="search"] {
 
 /* 공통 추천 서적 */
 .book {
-  background: lightgreen;
   grid-area: book;
 }
 
@@ -160,13 +159,29 @@ input[type="search"] {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: yellow;
   text-align: center;
+  /* display: flex;
+     flex-flow: column nowrap;
+     align-items: center; */
 }
 
 .book__coverCaption{
   margin-top: var(--spacing-sm);
   line-height: 1.6;
+}
+
+.book__info{
+  text-align: center;
+  margin-top: var(--spacing-base);
+}
+
+.book__info *{
+ display: inline; 
+}
+
+.ratingStar{
+  display: block;
+  font-size: var(--spacing-xl);
 }
 
 /* 공통 새소식 */
