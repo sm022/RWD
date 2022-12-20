@@ -34,7 +34,7 @@
         <div class="searchForm__group">
           <div class="formInput">
             <label for="search" class="a11yHidden formInput__label">검색어</label>
-            <spannput id="search" class="formInput__input" type="search" required placeholder="검색어를 입력하세요." name="search" />
+            <input id="search" class="formInput__input" type="search" required placeholder="검색어를 입력하세요." name="search" />
           </div>
           <button type="submit" class="button button--primary button--fill">검색</button>
         </div>
@@ -65,7 +65,7 @@
         <span class="book__enTitle accentBook">Recommend Book</span>
       </h2>
       <figure class="book__cover">
-        <spanmg src="./assets/images/book_rwd.jpg" alt="" class="book__coverImage" aria-labelledby="book__coverCaption" />
+        <img src="./assets/images/book_rwd.jpg" alt="" class="book__coverImage" aria-labelledby="book__coverCaption" />
         <figcaption id="book__coverCaption" class="book__coverCaption">반응형웹 핵심 가이드북</figcaption>
       </figure>
       <dl class="book__info">
@@ -81,12 +81,12 @@
         <span class="news__koTitle">새소식</span>
         <span class="news__enTitle accentNews">WebCafe News</span></h2>
       <figure class="news__videoContainer">
-        <video class="news__video" poster="./assets/media/poster.jpg" controls>
+        <!-- <video class="news__video" poster="./assets/media/poster.jpg" controls>
           <source src="./assets/media/stories.mp4" type="video/mp4" />
           <track src="./assets/media/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
         </video>
-        <!-- <div class="iframeWrapper iframeRatio-16-9">
-          <spanframe width="560" height="315" src="https://www.youtube.com/embed/554aOV9iV7s" allowfullscreen></spanframe>
+        <div class="iframeWrapper iframeRatio-16-9"> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/554aOV9iV7s" allowfullscreen></iframe>
         </div> -->
         <figcaption class="a11yHidden">구글 개발자 이야기</figcaption>
       </figure>
@@ -96,8 +96,8 @@
         ‘구글플레이 개발자와의 대화’는 ‘해외에서 빵터진 한국 앱'을 주제로 진행됐는데요, 국내 앱 시장은 물론 글로벌 시장에서도 주목
         받으며 글로벌 진출의 본보기가 되고 있는 개발사 세 곳과 함께 했습니다.
       </p>
-      <time class="news__date" datetime="2022-12-20T10:15:23">
-        <span class="far fa-calendar-alt accentNews" aria-hidden="true"></span>2022.12.20
+      <time class="news__date" datetime="2022-07-21T14:03:23">
+        <span class="far fa-calendar-alt accentNews" aria-hidden="true"></span>2022.07.21
       </time>
     </section>
     <section class="board">
@@ -184,7 +184,7 @@
           </dd>
         </dl>
         <figure class="twitter__userProfile">
-          <spanmg src="./images/hero.jpg" alt="" class="twitter__userProfileImage" />
+          <img src="./images/hero.jpg" alt="" class="twitter__userProfileImage" />
         </figure>
         <p class="twitter__summary">
           웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을
