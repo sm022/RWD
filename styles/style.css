@@ -197,7 +197,6 @@ input[type="search"] {
 
 /* 공통 새소식 */
 .news {
-  /* background: yellow; */
   grid-area: news;
 }
 
@@ -209,8 +208,32 @@ input[type="search"] {
 
 /* 공통 게시판 */
 .board {
-  /* background: lightsalmon; */
+  background: yellow;
   grid-area: board;
+}
+
+.board__title{
+
+}
+
+.board__list{
+
+}
+
+.board__item{
+
+}
+
+.board__link{
+
+}
+
+.board__date{
+
+}
+
+.board__more{
+  
 }
 
 /* 공통 인기 사이트 */
