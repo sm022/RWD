@@ -222,13 +222,14 @@ input[type="search"] {
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-sm);
+  width: 100%;
 }
 .board__item{
   display: flex;
   flex-flow: row nowrap;
 }
 .board__link{
-  flex: 1 0 auto;
+  flex: 0 1 auto;
   /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
