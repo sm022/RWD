@@ -390,7 +390,7 @@ input[type="search"] {
     transform: translateY(-50%) rotate(-45deg);
   }
 
-  /* 모베알 메인 메뉴 */
+  /* 모바일 메인 메뉴 */
   .menu__list {
     background: var(--accent-opacity-color);
     position: fixed;
@@ -439,6 +439,18 @@ input[type="search"] {
     color: var(--accent-favorite);
     font-size: var(--text-sm);
     margin-left: var(--spacing-xs);
+  }
+
+  /* 모바일 푸터 */
+  .appFooter{
+    font-size: var(--text-sm);
+  }
+
+  /* 모바일 주소 */
+  .address{
+    display: flex;
+    flex-flow: column nowrap;
+    
   }
 }
 
@@ -550,6 +562,11 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter{
+    align-items: center;
   }
 }
 /* 고해상도 배경이미지 미디어쿼리 */
